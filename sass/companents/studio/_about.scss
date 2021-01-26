@@ -1,0 +1,76 @@
+.container-about {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.about-position {
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+  }
+}
+
+.about-position::before {
+  display: block;
+  content: "";
+  height: 120px;
+
+  margin-bottom: 30px;
+
+  background: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.about-position:nth-child(1)::before {
+  background-image: url("../img/whatdo/antenna.svg");
+}
+
+.about-position:nth-child(2)::before {
+  background-image: url("../img/whatdo/clock.svg");
+}
+
+.about-position:nth-child(3)::before {
+  background-image: url("../img/whatdo/diagram.svg");
+}
+
+.about-position:nth-child(4)::before {
+  background-image: url("../img/whatdo/astronaut.svg");
+}
+.about-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+
+  color: #212121;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.about-text {
+  margin-bottom: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: $color-text;
+}

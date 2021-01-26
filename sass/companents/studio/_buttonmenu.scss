@@ -1,0 +1,38 @@
+.menu-button {
+  display: inline-flex;
+  margin-left: auto;
+  margin-top: 10px;
+
+  border: none;
+  outline: none;
+
+  background: #fff;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button:hover {
+  color: $color-base;
+}
+
+.svg-menu {
+  fill: currentColor;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container.is-open {
+  display: none;
+}
