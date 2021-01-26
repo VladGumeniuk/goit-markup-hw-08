@@ -1254,6 +1254,15 @@ p {
   border: 1px solid #eeeeee;
 }
 
+@media screen and (max-width: 767px) {
+  .cards-content {
+    margin-bottom: 30px;
+  }
+  .cards-content:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .cards-content {
     flex-basis: calc(100% / 2 - 30px);
