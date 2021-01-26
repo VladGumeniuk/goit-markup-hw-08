@@ -228,7 +228,7 @@
 .checkbox:checked + .modal-checkbox {
   border: 2px solid $color-base;
   background-color: $color-base;
-  background-image: url("../../img/modal/iconcheck.svg");
+  background-image: url("../img/modal/iconcheck.svg");
   background-size: contain;
   background-origin: border-box;
 }
@@ -258,7 +258,7 @@
   border-radius: 4px;
 }
 
-.modal-button-:hover,
-.modal-button-:focus {
+.modal-button:hover,
+.modal-button:focus {
   background-color: #188ce8;
 }
